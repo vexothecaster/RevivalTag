@@ -1,0 +1,19 @@
+{
+    "short_name": "Revival Tag",
+    "name": "Revival Tag ",
+    "icons": [
+      {
+        "src": "favicon.png",
+        "sizes": "16x16 32x32 48x48",
+        "type": "image/x-icon"
+      },
+      {
+        "src": "favicon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone"
+  }
+  

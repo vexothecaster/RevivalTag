@@ -3,153 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revival Tag</title>
+    <title>Gorilla Tag Game</title>
     <style>
-        /* Global Styles */
+        /* General body and background styles */
         body {
+            font-family: Arial, sans-serif;
+            background-color: #666666;
+            color: #fff;
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #666666; /* Gray background */
-            color: #f3f3f3; /* Light text for readability */
-        }
-        a {
-            text-decoration: none;
-        }
-        
-        /* Header Styles */
-        header {
-            background-color: #4CAF50; /* Green color for the header */
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        }
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.3em;
-            margin-top: 0;
-        }
-
-        /* Container Styles */
-        .container {
-            width: 80%;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: #2d2d2d; /* Darker background for sections */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-            border-radius: 8px;
-        }
-
-        /* Section Styles */
-        .section {
-            margin-bottom: 40px;
+            padding: 0;
             text-align: center;
         }
-        .section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #2a4d72; /* Dark blue color for section titles */
-        }
-        .section p {
-            font-size: 1.2em;
-            color: #ccc; /* Lighter text for better readability */
-        }
 
-        /* Button Styles */
-        .button {
-            display: inline-block;
-            background-color: #63aadf; /* Updated button background color (light blue) */
-            color: #ffffff; /* White text to match button background */
-            padding: 15px 40px;
-            font-size: 1.5em;
+        /* Button styles */
+        button {
+            background-color: #63aadf;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: 2px solid #63aadf;
             border-radius: 8px;
-            margin-top: 20px;
             cursor: pointer;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for box-shadow */
+            transition: all 0.3s ease; /* Smooth hover effect */
         }
 
-        /* Hover Effect for Button */
-        .button:hover {
-            background-color: #4e8fc2; /* Darker shade of blue on hover */
-            box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8); /* White glow effect */
+        /* Button hover effect */
+        button:hover {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Smooth glow effect */
         }
 
-        /* Link Styles */
-        .section a {
-            color: #2a4d72; /* Dark blue links to match button background */
-            font-size: 1.1em;
+        /* Header styling */
+        h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+
+        /* Section styling */
+        section {
+            margin-top: 50px;
+        }
+
+        /* Styling for link buttons */
+        a {
+            color: #63aadf;
             text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .section a:hover {
-            color: #1e3651; /* Darker shade of blue on hover */
         }
 
-        /* Center Guide Instructions */
-        .instructions {
-            text-align: center;
-            margin: 0 auto;
-            color: #ccc;
+        /* Styling for instructions and rules */
+        .instructions, .rules {
+            margin-top: 30px;
             font-size: 1.2em;
-            max-width: 600px; /* Limit width of instructions */
         }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
-            }
-            header p {
-                font-size: 1.1em;
-            }
-            .container {
-                width: 90%;
-            }
-            .button {
-                font-size: 1.3em;
-                padding: 12px 30px;
-            }
-        }
-
     </style>
 </head>
 <body>
+    <h1>Welcome to Gorilla Tag</h1>
 
-<header>
-    <h1>Revival Tag</h1>
-    <p>Welcome to Revival Tag - Join the fun and start playing!</p>
-</header>
+    <section>
+        <button onclick="window.location.href='https://discord.gg/example'">Join Discord Server</button>
+        <button onclick="window.location.href='https://example.com/download'">Download the Game</button>
+    </section>
 
-<div class="container">
+    <section class="instructions">
+        <h2>How to Play</h2>
+        <ul>
+            <li>Move like a gorilla: use your hands to run around!</li>
+            <li>Avoid being tagged by the "it" player.</li>
+            <li>Work together with your team to tag others.</li>
+        </ul>
+    </section>
 
-    <!-- Section for the Game and Download Links -->
-    <div class="section">
-        <h2>Get Started</h2>
-        <p>Join our Discord server and download the game to start playing.</p>
-        <a href="https://discord.com/invite/revivaltag" class="button" target="_blank">Join Discord</a>
-        <a href="https://www.meta.com/experiences/28621050654176378/" class="button" target="_blank">Download Game</a>
-    </div>
+    <section class="rules">
+        <h2>Game Rules</h2>
+        <ul>
+            <li>No cheating or exploiting bugs.</li>
+            <li>Respect all players and play fair.</li>
+            <li>If you are tagged, you become "it"!</li>
+        </ul>
+    </section>
 
-    <!-- Section for Guide and Rules Links -->
-    <div class="section">
-        <h2>Learn More</h2>
-        <p>Check out our guide and full rules to know how to play.</p>
-        <a href="guide.html" class="button" target="_blank">Read the full guide</a>
-        <a href="rules.html" class="button" target="_blank">Read the full rules</a>
-    </div>
-
-    <div class="section">
-        <h2>Follow Us</h2>
-        <p>Stay connected with the latest news and updates:</p>
-        <a href="https://www.tiktok.com/@revival.tag.official?_t=ZT-8u8WL5S1qvq&_r=1" class="button" target="_blank">Follow on TikTok</a>
-    </div>
-
-<link rel="manifest" href="manifest.json">
-
-</div>
-
+    <section>
+        <button onclick="window.location.href='guide.html'">Read the Full Guide</button>
+        <button onclick="window.location.href='rules.html'">Read the Full Rules</button>
+    </section>
 </body>
 </html>
